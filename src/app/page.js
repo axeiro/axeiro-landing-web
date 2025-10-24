@@ -10,6 +10,7 @@ import FutureGoals from "@/components/FutureGoals";
 import PricingCTA from "@/components/PricingCTA";
 import Footer from "@/components/Footer";
 import NavbarWrapper from "@/components/NavbarWrapper";
+import Pricing from "@/components/Pricing";
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
           <Services />
           <Security />
           <Integrations />
+          <Pricing />
           <DashboardPreview />
           <Reviews />
           <FutureGoals />
