@@ -53,15 +53,41 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative z-10 py-24 px-6"
+      className="relative z-10 py-24 px-6 overflow-hidden"
       ref={wrapperRef}
     >
+      {/* Big Transparent Squares Background */}
+      <svg
+        className="absolute inset-0 -z-20 w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          {/* Squares pattern */}
+          <pattern id="bigSquares" width="100" height="100" patternUnits="userSpaceOnUse">
+            <rect width="50" height="50" fill="white" opacity="0.05" />
+          </pattern>
+
+          {/* Vertical fade mask (top & bottom invisible, middle visible) */}
+          <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="white" stopOpacity="0" />
+            <stop offset="50%" stopColor="white" stopOpacity="0.15" />
+            <stop offset="100%" stopColor="white" stopOpacity="0" />
+          </linearGradient>
+
+          <mask id="mask" maskUnits="userSpaceOnUse">
+            <rect width="100%" height="100%" fill="url(#fade)" />
+          </mask>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#bigSquares)" mask="url(#mask)" />
+      </svg>
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        
         {/* Left Card with animation */}
         <div
           ref={leftCardRef}
-          className="rounded-3xl bg-white/5 backdrop-blur-md p-8 shadow-lg"
+          className="rounded-3xl backdrop-blur-xl p-8 shadow-md shadow-[#0e092b] relative z-10"
         >
           <h3 className="text-2xl font-semibold">Services</h3>
           <p className="text-gray-300 mt-3">
@@ -78,20 +104,20 @@ export default function Services() {
         </div>
 
         {/* Right Visual with floating animation */}
-        <div ref={rightCardRef} className="flex flex-col items-center text-center ">
+        <div ref={rightCardRef} className="flex flex-col items-center text-center relative z-10">
           <div className="pointer-events-none overflow-hidden scale-112 md:scale-110">
-          <div className="  h-86 ">
-             <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="sm:w-90"
-    style={{ transform: "translateZ(0)", willChange: "transform" }}
-  >
-    <source src="/animations/Power Mining Deploy.webm" type="video/webm" />
-  </video>
-          </div>
+            <div className="h-86">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="sm:w-90"
+                style={{ transform: "translateZ(0)", willChange: "transform" }}
+              >
+                <source src="/animations/Power Mining Deploy.webm" type="video/webm" />
+              </video>
+            </div>
           </div>
 
           <div className="mt-4">
@@ -101,7 +127,6 @@ export default function Services() {
             </p>
           </div>
         </div>
-        
       </div>
     </section>
   );

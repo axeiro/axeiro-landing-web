@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 /* Extra glass utilities: (these rely on backdrop-filter support) */
 .backdrop-blur-2xl { backdrop-filter: blur(20px); }
 .backdrop-blur-lg { backdrop-filter: blur(12px); }

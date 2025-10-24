@@ -52,24 +52,39 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative z-10 py-24 px-6 text-white">
+    <section id="pricing" className="relative z-10 py-24 px-6 text-white overflow-hidden">
       
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      {/* Subtle SVG Lines Background */}
+      <svg
+        className="absolute inset-0 w-full h-full -z-10"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <pattern id="lines" width="80" height="80" patternUnits="userSpaceOnUse">
+            <path d="M0 0 L80 0 L80 80" fill="none" stroke="white" strokeWidth="0.3" opacity="0.05"/>
+            <rect x="0" y="0" width="10" height="10" fill="white" opacity="0.03"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#lines)" />
+      </svg>
+
+      <div className="max-w-6xl mx-auto text-center mb-12 relative z-10">
         <h2 className="text-3xl font-bold">Pricing</h2>
         <p className="text-gray-300 mt-2">
           Scale at your own speed. No hidden costs. Cancel anytime.
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 relative z-10">
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className={`p-8 rounded-3xl backdrop-blur-md border transition
+            className={`p-8 rounded-3xl backdrop-blur-sm border transition
               ${
                 plan.highlight
-                  ? "bg-white/10 border-blue-500/60 shadow-xl shadow-blue-400/10 scale-105"
-                  : "bg-white/5 border-white/10"
+                  ? " border-blue-500/60 shadow-xl  scale-105"
+                  : " border-white/10"
               }`}
           >
             <h3 className="text-2xl font-semibold">{plan.name}</h3>
