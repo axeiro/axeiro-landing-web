@@ -13,6 +13,8 @@ const partners = [
   { name: "Azure", logo: "/logos/azure.png" },
   { name: "Docker", logo: "/logos/docker.png" },
   { name: "Kubernetes", logo: "/logos/kubernetes.png" },
+  { name: "github", logo: "/logos/github.png" },
+  { name: "gitlab", logo: "/logos/gitlab.png" },
 ];
 
 export default function Integrations() {
@@ -75,7 +77,7 @@ export default function Integrations() {
                 key={p.name}
                 className="p-4 rounded-xl  border border-white/10 w-28 h-16 flex items-center justify-center backdrop-blur-sm"
               >
-                <img src={p.logo} alt={p.name} className="max-h-10 object-contain" />
+                <img src={p.logo} alt={p.name} className="max-h-12 object-contain" />
               </div>
             ))}
           </div>
