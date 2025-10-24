@@ -33,7 +33,7 @@ export default function Integrations() {
       // Infinite horizontal scroll animation
       gsap.to(strip, {
         x: -totalWidth,
-        duration: 15,
+        duration: 25,
         ease: "linear",
         repeat: -1,
         modifiers: {
