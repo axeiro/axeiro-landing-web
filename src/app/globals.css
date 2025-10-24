@@ -25,7 +25,7 @@
 
 /* noise texture - prefer a small PNG at /public/noise-256.png */
 .noise-pattern {
-  background-image: url('/noise-256.avif');
+  background-image: url('/noise-256.jpg');
   background-repeat: repeat;
   background-size: 256px 256px;
 }
