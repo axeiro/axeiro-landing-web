@@ -11,6 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+      </head>
       <body className="bg-[#0a061e] text-white min-h-screen antialiased">
         
         <div className="">

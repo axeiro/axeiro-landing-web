@@ -19,7 +19,9 @@ const partners = [
 
 export default function Integrations() {
   const wrapperRef = useRef(null);
+  const wrapperRef2 = useRef(null);
   const stripRef = useRef(null);
+  const stripRef2 = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -57,6 +59,46 @@ export default function Integrations() {
 
     return () => ctx.revert();
   }, []);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const strip = stripRef2.current;
+
+      // Duplicate logos so it loops smoothly
+      strip.innerHTML += strip.innerHTML;
+
+      const totalWidth = strip.scrollWidth / 2;
+
+      // Infinite horizontal scroll animation
+      gsap.to(strip, {
+        x: totalWidth,
+        duration: 25,
+        ease: "linear",
+        repeat: -1,
+        modifiers: {
+          x: (x) => `${parseFloat(x) % totalWidth}px`,
+        },
+      });
+
+      // Optional fade-in scroll animation
+      // Infinite horizontal scroll animation (left ➜ right)
+gsap.fromTo(
+  strip,
+  { x: -totalWidth }, // start with the clone hidden on the left
+  {
+    x: 0, // slide into view
+    duration: 25,
+    ease: "linear",
+    repeat: -1,
+    modifiers: {
+      x: (x) => `${parseFloat(x) % totalWidth}px`,
+    },
+  }
+);
+
+    }, wrapperRef2);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
     <section id="integrations" className="relative z-10 py-20 px-6 overflow-hidden">
@@ -70,6 +112,22 @@ export default function Integrations() {
         <div className="mt-10 overflow-hidden relative">
           <div
             ref={stripRef}
+            className="flex gap-8 items-center justify-center w-max"
+          >
+            {partners.map((p) => (
+              <div
+                key={p.name}
+                className="p-4 rounded-xl  border border-white/10 w-28 h-16 flex items-center justify-center backdrop-blur-sm"
+              >
+                <img src={p.logo} alt={p.name} className="max-h-12 object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Scrolling Logos */}
+        <div className="mt-10 overflow-hidden relative">
+          <div
+            ref={stripRef2}
             className="flex gap-8 items-center justify-center w-max"
           >
             {partners.map((p) => (
