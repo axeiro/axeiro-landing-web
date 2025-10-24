@@ -78,8 +78,8 @@ export default function Services() {
         </div>
 
         {/* Right Visual with floating animation */}
-        <div ref={rightCardRef} className="flex flex-col items-center text-center">
-          <div className="pointer-events-none overflow-hidden">
+        <div ref={rightCardRef} className="flex flex-col items-center text-center ">
+          <div className="pointer-events-none overflow-hidden scale-112 md:scale-110">
           <div className="  h-86 ">
              <video
     autoPlay
