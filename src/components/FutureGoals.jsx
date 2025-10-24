@@ -1,20 +1,11 @@
 "use client";
 
 import Lottie from "lottie-react";
-import animationData from "../../public/Wave Loop.json";
 
 // components/FutureGoals.jsx
 export default function FutureGoals() {
   return (
     <section className="reveal relative py-20 px-6 overflow-hidden">
-      {/* Lottie Background */}
-      <div className="absolute top-0 inset-0 -z-10">
-        <Lottie
-          animationData={animationData}
-          loop
-          className="w-full h-full object-cover -translate-y-10 rotate-90 md:rotate-0"
-        />
-      </div>
 
       <div className="max-w-6xl mx-auto rounded-3xl backdrop-blur-lg  p-10 shadow-[0_0_30px_rgba(0,0,0,0.6)] ">
         <h3 className="text-2xl font-semibold text-white">Future Goals & Roadmap</h3>

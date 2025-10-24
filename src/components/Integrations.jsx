@@ -73,7 +73,7 @@ export default function Integrations() {
             {partners.map((p) => (
               <div
                 key={p.name}
-                className="p-4 rounded-xl bg-white/10 border border-white/10 w-28 h-16 flex items-center justify-center backdrop-blur-sm"
+                className="p-4 rounded-xl  border border-white/10 w-28 h-16 flex items-center justify-center backdrop-blur-sm"
               >
                 <img src={p.logo} alt={p.name} className="max-h-10 object-contain" />
               </div>
