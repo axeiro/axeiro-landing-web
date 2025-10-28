@@ -10,7 +10,7 @@ export default function FutureGoals() {
       <div className="max-w-6xl mx-auto rounded-3xl backdrop-blur-lg  p-10 shadow-[0_0_30px_rgba(0,0,0,0.6)] ">
         <h3 className="text-2xl font-semibold text-white">Future Goals & Roadmap</h3>
         <p className="text-gray-300 mt-3">
-          We’re building Seradox to become the easiest and most secure VM orchestration
+          We’re building axeiro to become the easiest and most secure VM orchestration
           tool for teams worldwide.
         </p>
 

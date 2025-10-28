@@ -3,7 +3,7 @@ export default function Deployment() {
     <article>
       <h1 className="text-3xl font-bold mb-4">Deploying Containers & Web Apps</h1>
       <p className="text-gray-300 mb-6">
-        Seradox makes it easy to deploy containers and web applications on your virtual machines.
+        axeiro makes it easy to deploy containers and web applications on your virtual machines.
         Follow these steps to deploy your first app.
       </p>
 
@@ -23,7 +23,7 @@ docker build -t my-app .
 docker run -p 3000:3000 my-app`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-10 mb-3">3. Deploy via Seradox</h2>
+      <h2 className="text-xl font-semibold mt-10 mb-3">3. Deploy via axeiro</h2>
       <p className="text-gray-400 mb-4">
         Go to <b>Dashboard → Apps → Create App</b>. Select your VM, app type, and upload your code or Docker image. Click <b>Deploy</b>.
       </p>

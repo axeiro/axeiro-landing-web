@@ -3,7 +3,7 @@ export default function VMManagement() {
     <article>
       <h1 className="text-3xl font-bold mb-4">Managing Virtual Machines</h1>
       <p className="text-gray-300 mb-6">
-        Learn how to manage your VM instances, snapshots, scaling, and maintenance using Seradox.
+        Learn how to manage your VM instances, snapshots, scaling, and maintenance using axeiro.
       </p>
 
       <h2 className="text-xl font-semibold mt-10 mb-3">1. View & Access VMs</h2>
@@ -18,12 +18,12 @@ export default function VMManagement() {
 
       <pre className="bg-[#1b002b] border border-white/10 rounded-lg p-4 text-sm overflow-x-auto">
 {`# Example: create snapshot
-seradox snapshot create --vm <vm-id> --name "pre-update-backup"`}
+axeiro snapshot create --vm <vm-id> --name "pre-update-backup"`}
       </pre>
 
       <h2 className="text-xl font-semibold mt-10 mb-3">3. Scaling Instances</h2>
       <p className="text-gray-400 mb-4">
-        Increase CPU, RAM, or disk space via the Dashboard. Seradox handles resizing without downtime in most cases.
+        Increase CPU, RAM, or disk space via the Dashboard. axeiro handles resizing without downtime in most cases.
       </p>
 
       <div className="mt-10 border-t border-white/10 pt-6 text-sm text-gray-400">

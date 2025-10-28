@@ -25,7 +25,7 @@ export default function PricingCTA() {
         <h3 className="text-3xl font-bold text-white">
           Get Early Access to{" "}
           <span className="bg-gradient-to-tr from-[#c900ff] to-[#7a00ff] bg-clip-text text-transparent">
-            Seradox
+            axeiro
           </span>
         </h3>
 

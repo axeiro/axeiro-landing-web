@@ -3,7 +3,7 @@ export default function APIReference() {
     <article>
       <h1 className="text-3xl font-bold mb-4">API Reference</h1>
       <p className="text-gray-300 mb-6">
-        Interact with Seradox programmatically using our REST API. Authenticate, query resources, and manage VMs.
+        Interact with axeiro programmatically using our REST API. Authenticate, query resources, and manage VMs.
       </p>
 
       <h2 className="text-xl font-semibold mt-10 mb-3">1. Authentication</h2>
@@ -12,7 +12,7 @@ export default function APIReference() {
       </p>
 
       <pre className="bg-[#1b002b] border border-white/10 rounded-lg p-4 text-sm overflow-x-auto">
-{`curl -H "Authorization: Bearer <API_TOKEN>" https://api.seradox.com/v1/vms`}
+{`curl -H "Authorization: Bearer <API_TOKEN>" https://api.axeiro.com/v1/vms`}
       </pre>
 
       <h2 className="text-xl font-semibold mt-10 mb-3">2. Endpoints & Payloads</h2>

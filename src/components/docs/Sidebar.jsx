@@ -15,8 +15,8 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 border-r border-white/10 bg-white/5 backdrop-blur-xl p-6 hidden md:block">
-      <h2 className="text-xl font-semibold mb-6 text-[#c900ff]">Seradox Docs</h2>
+    <aside className="  w-64 border-r border-white/10 bg-white/5 backdrop-blur-xl p-6 hidden md:block">
+      <h2 className="text-xl font-semibold mb-6 text-[#c900ff]">axeiro Docs</h2>
       <nav className="flex flex-col gap-3">
         {sections.map((s) => (
           <Link

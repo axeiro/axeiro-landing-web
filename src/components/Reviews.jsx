@@ -8,7 +8,7 @@ const reviewsData = [
     name: "Aisha R.",
     role: "Founder • Fintech",
     photo: "/users/aisha.jpg",
-    text: "Working with Seradox felt like unlocking a cheat code. I sent them a design and a week later, we had a production-ready infrastructure.",
+    text: "Working with axeiro felt like unlocking a cheat code. I sent them a design and a week later, we had a production-ready infrastructure.",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const reviewsData = [
     name: "Sunita M.",
     role: "DevOps Contractor",
     photo: "/users/sunita.jpg",
-    text: "Seradox made infra-as-code effortless. I use it for all my freelance projects now — smooth, powerful, elegant.",
+    text: "axeiro made infra-as-code effortless. I use it for all my freelance projects now — smooth, powerful, elegant.",
   },
 ];
 

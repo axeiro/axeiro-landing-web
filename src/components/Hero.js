@@ -31,7 +31,7 @@ export default function Hero() {
               </h1>
 
               <p className="mt-3 text-gray-300 max-w-xl">
-                Seradox lets teams deploy, manage and scale virtual machines across AWS,
+                axeiro lets teams deploy, manage and scale virtual machines across AWS,
                 DigitalOcean and private infra — without mastering DevOps. One-click
                 servers, snapshots, autoscaling, and role-based access.
               </p>

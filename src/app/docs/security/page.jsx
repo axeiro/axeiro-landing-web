@@ -13,7 +13,7 @@ export default function Security() {
 
       <h2 className="text-xl font-semibold mt-10 mb-3">2. SSH Key Management</h2>
       <p className="text-gray-400 mb-4">
-        Always use SSH keys instead of passwords. Upload your public key to Seradox Dashboard → SSH Keys.
+        Always use SSH keys instead of passwords. Upload your public key to axeiro Dashboard → SSH Keys.
       </p>
 
       <h2 className="text-xl font-semibold mt-10 mb-3">3. Encryption & Network Rules</h2>

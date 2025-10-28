@@ -8,21 +8,35 @@ import "@/app/globals.css";
 
 export default function DocsLayout({ children }) {
   useEffect(() => {
-    const lenis = new Lenis();
-    const raf = (time) => {
+    // initialize Lenis
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+      smoothTouch: false,
+    });
+
+    function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
-    };
+    }
     requestAnimationFrame(raf);
+
+    // cleanup
+    return () => lenis.destroy();
   }, []);
 
   return (
-    <div className="flex min-h-screen bg-[#0b0014] text-gray-100">
+    <div className="min-h-screen bg-[#0b0014] text-gray-100 flex">
+      {/* Sidebar scrolls independently */}
       <Sidebar />
-      <main className="flex-1 overflow-y-auto">
-        <Header />
-        <div className="max-w-5xl mx-auto p-8">{children}</div>
-      </main>
+
+      {/* Lenis smooth scroll area */}
+      <div id="lenis-wrapper" className="flex-1 overflow-hidden">
+        <div id="lenis-content">
+          <Header />
+          <main className="max-w-5xl mx-auto p-8">{children}</main>
+        </div>
+      </div>
     </div>
   );
 }

@@ -7,12 +7,12 @@ export default function Footer() {
 
         {/* Branding Section */}
         <div>
-          <h3 className="text-2xl font-semibold text-white">Seradox</h3>
+          <h3 className="text-2xl font-semibold text-white">axeiro</h3>
           <p className="mt-2 text-sm">
             Automating VM deployments so you focus on building.
           </p>
           <p className="text-xs mt-4 text-gray-400">
-            © {new Date().getFullYear()} Seradox. All rights reserved.
+            © {new Date().getFullYear()} axeiro. All rights reserved.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
 
           <div className="flex gap-4 text-xl mt-2">
             <a
-              href="https://twitter.com/seradox"
+              href="https://twitter.com/axeiro"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
               aria-label="Twitter"
@@ -42,7 +42,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/company/seradox"
+              href="https://linkedin.com/company/axeiro"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
               aria-label="LinkedIn"
@@ -51,7 +51,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://github.com/seradox"
+              href="https://github.com/axeiro"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
               aria-label="GitHub"
@@ -60,7 +60,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://youtube.com/@seradox"
+              href="https://youtube.com/@axeiro"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
               aria-label="YouTube"
@@ -69,7 +69,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:contact@seradox.com"
+              href="mailto:contact@axeiro.com"
               className="text-gray-300 hover:text-white transition"
               aria-label="Email"
             >

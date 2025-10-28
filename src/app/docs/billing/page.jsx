@@ -3,7 +3,7 @@ export default function Billing() {
     <article>
       <h1 className="text-3xl font-bold mb-4">Billing & Usage</h1>
       <p className="text-gray-300 mb-6">
-        Manage your plan, credits, invoices, and monitor usage metrics easily with Seradox.
+        Manage your plan, credits, invoices, and monitor usage metrics easily with axeiro.
       </p>
 
       <h2 className="text-xl font-semibold mt-10 mb-3">1. Plans & Credits</h2>

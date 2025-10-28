@@ -65,7 +65,7 @@ export default function Services() {
         <defs>
           {/* Squares pattern */}
           <pattern id="bigSquares" width="100" height="100" patternUnits="userSpaceOnUse">
-            <rect width="50" height="50" fill="white" opacity="0.05" />
+<rect width="80" height="80" fill="white" rx="5" ry="5" opacity="0.08" />
           </pattern>
 
           {/* Vertical fade mask (top & bottom invisible, middle visible) */}
@@ -91,7 +91,7 @@ export default function Services() {
         >
           <h3 className="text-2xl font-semibold">Services</h3>
           <p className="text-gray-300 mt-3">
-            From provisioning to production, Seradox covers the full VM lifecycle.
+            From provisioning to production, axeiro covers the full VM lifecycle.
           </p>
 
           <ul className="mt-6 space-y-3 text-gray-300">

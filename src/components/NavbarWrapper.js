@@ -12,7 +12,7 @@ export default function NavbarWrapper() {
     >
       <nav className="pointer-events-auto w-full max-w-6xl mx-4 rounded-full backdrop-blur-xs border border-white/8 px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="font-bold text-lg tracking-wide">Seradox</div>
+          <div className="font-bold text-lg tracking-wide uppercase">axeiro</div>
           <div className="hidden md:flex gap-6 text-sm text-gray-200">
             <Link href="#who">Who</Link>
             <Link href="#services">Services</Link>

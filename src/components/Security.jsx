@@ -7,7 +7,7 @@ export default function Security() {
           <h3 className="text-2xl font-semibold">Data Security & Compliance</h3>
           <p className="text-gray-300 mt-3">
             Security-first design: role-based access control, encrypted disks, TLS at rest and transit, and audit logs.
-            Use Seradox with AWS (EC2, EBS), DigitalOcean Droplets, or bring-your-own servers.
+            Use axeiro with AWS (EC2, EBS), DigitalOcean Droplets, or bring-your-own servers.
           </p>
           <ul className="mt-6 text-gray-300 space-y-2">
             <li>• Encrypted storage and backups (AES-256)</li>
