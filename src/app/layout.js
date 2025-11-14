@@ -1,12 +1,18 @@
 import "./globals.css";
 import NavbarWrapper from "@/components/NavbarWrapper";
+import { poppins400 } from "@/fonts/fonts";
 import ScrollAndAnimProvider from "@/lib/scrollAndAnimProvider";
+
+
+
+
 
 export const metadata = {
   title: "axeiro — VM Orchestration Platform",
   description:
     "axeiro helps teams deploy, scale and manage virtual machines across AWS, DigitalOcean and private infrastructure with one-click deployments and automated scaling.",
 };
+
 
 export default function RootLayout({ children }) {
   return (
@@ -18,7 +24,7 @@ export default function RootLayout({ children }) {
 />
 
       </head>
-      <body className="bg-[#0a061e] text-white min-h-screen antialiased">
+      <body className={`bg-[#0a061e] text-white min-h-screen antialiased ${poppins400.className} `}>
         
         <div className="">
           <ScrollAndAnimProvider>{children}</ScrollAndAnimProvider>

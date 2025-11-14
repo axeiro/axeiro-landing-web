@@ -1,7 +1,8 @@
 // components/Hero.jsx
 "use client";
 import Lottie from "lottie-react";
-import animationData from "../../public/Technology Network.json"; // put your Lottie here
+import animationData from "../../public/Technology Network.json"; 
+import animationDataa from "../../public/Abstract animation for apps.json"; 
 import Image from "next/image";
 import Link from "next/link";
 

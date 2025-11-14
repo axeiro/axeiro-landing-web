@@ -65,7 +65,7 @@ export default function Services() {
         <defs>
           {/* Squares pattern */}
           <pattern id="bigSquares" width="100" height="100" patternUnits="userSpaceOnUse">
-<rect width="80" height="80" fill="white" rx="5" ry="5" opacity="0.08" />
+<rect width="80" height="80" fill="white" rx="5" ry="5" opacity="0.1" />
           </pattern>
 
           {/* Vertical fade mask (top & bottom invisible, middle visible) */}
