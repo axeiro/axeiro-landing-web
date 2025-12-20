@@ -30,7 +30,7 @@ export default function PricingCTA() {
         </h3>
 
         <p className="text-gray-300 mt-3 text-lg">
-          Join the waitlist and be among the first to try one-click VM orchestration.
+          Join the waitlist and be among the first to try one-click deployment orchestration.
         </p>
 
         <form
