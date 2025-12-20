@@ -8,10 +8,11 @@ import ScrollAndAnimProvider from "@/lib/scrollAndAnimProvider";
 
 
 export const metadata = {
-  title: "axeiro — VM Orchestration Platform",
+  title: "Axeiro — Application Deployment Platform",
   description:
-    "axeiro helps teams deploy, scale and manage virtual machines across AWS, DigitalOcean and private infrastructure with one-click deployments and automated scaling.",
+    "Axeiro lets teams deploy and redeploy applications directly from Git repositories onto managed cloud infrastructure, without managing servers, pipelines, or networking.",
 };
+
 
 
 export default function RootLayout({ children }) {
