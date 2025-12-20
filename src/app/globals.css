@@ -7,11 +7,7 @@
 .backdrop-blur-lg { backdrop-filter: blur(12px); }
 
 /* Noise texture - small repeated PNG would be better, but we add CSS fallback */
-.noise-pattern {
-  background-image: url('/noise-256.png'); /* add a small noise PNG to public/ or fallback to CSS below */
-  background-repeat: repeat;
-  background-size: 256px 256px;
-}
+
 
 /* If you don't want to include a PNG, you can fallback to CSS-generated noise (not as detailed) */
 /* Paste only if you don't use noise PNG */
@@ -31,6 +27,9 @@
   background-size: 256px 256px;
 }
 
+.noise-pattern.fallback {
+  background-image: repeating-radial-gradient(circle at 0 0, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 100%);
+}
 /* curved edges for section separators (example pseudo-element for curved bottom edge) */
 .section-curve {
   position: relative;

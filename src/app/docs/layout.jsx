@@ -26,7 +26,7 @@ export default function DocsLayout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0b0014] text-gray-100 flex">
+    <div className="min-h-screen bg-black text-gray-100 flex">
       {/* Sidebar scrolls independently */}
       <Sidebar />
 

@@ -1,53 +1,21 @@
 "use client";
 
 const plans = [
-  {
-    name: "Starter",
-    price: "₹999",
-    cycle: "/month",
-    highlight: false,
-    description: "Perfect for indie developers and solo projects",
-    features: [
-      "Up to 3 VMs",
-      "Basic Autoscaling",
-      "Shared Compute",
-      "Community Support",
-      "Basic Analytics",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Pro",
-    price: "₹4,999",
-    cycle: "/month",
-    highlight: true,
-    description: "Best for growing teams and agencies",
-    features: [
-      "Up to 20 VMs",
-      "Priority Autoscaling",
-      "High-performance Compute",
-      "24/7 Chat Support",
-      "Advanced Monitoring",
-      "Automated Backups",
-    ],
-    cta: "Upgrade to Pro",
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    cycle: "",
-    highlight: false,
-    description: "Designed for scale, security & compliance",
-    features: [
-      "Unlimited VMs",
-      "Private Infrastructure",
-      "Compliance & Hardening",
-      "Dedicated SRE / Architect",
-      "SLAs + On-Call Support",
-      "Custom Integrations",
-    ],
-    cta: "Contact Sales",
-  },
+   {
+  name: "Axeiro",
+  price: "₹199",
+  cycle: "/month",
+  description: "Predictable pricing for deploying production applications",
+  cta:"get started",
+  features: [
+    "Deploy & redeploy applications from GitHub",
+    "Managed build pipeline (Docker image builds)",
+    "Managed runtime on Axeiro AWS infrastructure",
+    "Stable application URLs with HTTPS",
+    "Cloudflare edge (DNS + TLS)",
+  ],
+
+}
 ];
 
 export default function Pricing() {
@@ -76,11 +44,11 @@ export default function Pricing() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 relative z-10">
+      <div className="w-full flex justify-center relative z-10">
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className={`p-8 rounded-3xl backdrop-blur-sm border transition
+            className={`p-8 w-sm rounded-3xl backdrop-blur-sm border transition
               ${
                 plan.highlight
                   ? " border-blue-500/60 shadow-xl  scale-105"
@@ -117,6 +85,47 @@ export default function Pricing() {
           </div>
         ))}
       </div>
+      {/* <div className="mt-10 grid gap-6 text-sm text-gray-300">
+          <div>
+            <h4 className="font-semibold text-white">What’s included</h4>
+            <ul className="mt-2 space-y-1">
+              <li>• Manual deploy & redeploy from selected Git branch</li>
+              <li>• Image build handled by Axeiro</li>
+              <li>• Application runtime managed by Axeiro</li>
+              <li>• HTTPS-enabled application endpoints</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-white">Current limits</h4>
+            <ul className="mt-2 space-y-1">
+              <li>• Limited number of active applications per account</li>
+              <li>• Limited redeploys per month (to control costs)</li>
+              <li>• Manual redeploy only (auto-deploy coming later)</li>
+              <li>• Shared build and runtime capacity</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-white">Security scope (v1)</h4>
+            <ul className="mt-2 space-y-1">
+              <li>• Cloudflare in front for DNS & TLS</li>
+              <li>• HTTPS enforced on all deployments</li>
+              <li>• Private runtime networking (no public instances)</li>
+              <li>• Axeiro-managed AWS infrastructure</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-white">How billing works</h4>
+            <ul className="mt-2 space-y-1">
+              <li>• ₹199/month is Axeiro’s platform fee</li>
+              <li>• Cloud usage (compute, bandwidth) is billed separately</li>
+              <li>• Usage is tracked per application</li>
+              <li>• No auto-scaling surprise bills</li>
+            </ul>
+          </div>
+        </div> */}
     </section>
   );
 }

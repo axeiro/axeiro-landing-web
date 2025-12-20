@@ -8,9 +8,7 @@ export default function Header() {
         axeiro
       </Link>
       <div className="flex gap-4 text-sm">
-        <Link href="/docs" className="hover:text-[#c900ff]">Docs Home</Link>
-        <Link href="/pricing" className="hover:text-[#c900ff]">Pricing</Link>
-        <Link href="/contact" className="hover:text-[#c900ff]">Support</Link>
+        <Link href="/" className="hover:text-[#c900ff]">Home</Link>
       </div>
     </header>
   );

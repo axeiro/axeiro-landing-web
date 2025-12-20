@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-semibold text-white">axeiro</h3>
           <p className="mt-2 text-sm">
-            Automating VM deployments so you focus on building.
+            Automating application deployments so you focus on building.
           </p>
           <p className="text-xs mt-4 text-gray-400">
             © {new Date().getFullYear()} axeiro. All rights reserved.
@@ -33,7 +33,7 @@ export default function Footer() {
 
           <div className="flex gap-4 text-xl mt-2">
             <a
-              href="https://twitter.com/axeiro"
+              href="https://twitter.com/axeirohq"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
               aria-label="Twitter"
@@ -60,7 +60,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://youtube.com/@axeiro"
+              href="https://youtube.com/@axeirohq"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
               aria-label="YouTube"

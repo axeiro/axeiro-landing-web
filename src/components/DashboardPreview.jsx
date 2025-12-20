@@ -13,7 +13,6 @@ export default function DashboardPreview() {
         preserveAspectRatio="none"
       >
         <defs>
-          {/* Grid pattern */}
           <pattern
             id="grid"
             width="40"
@@ -29,7 +28,6 @@ export default function DashboardPreview() {
             />
           </pattern>
 
-          {/* Gradient mask for top-middle-bottom fade */}
           <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="white" stopOpacity="0" />
             <stop offset="50%" stopColor="white" stopOpacity="1" />
@@ -41,7 +39,6 @@ export default function DashboardPreview() {
           </mask>
         </defs>
 
-        {/* Apply the mask to the grid */}
         <rect
           width="100%"
           height="100%"
@@ -54,16 +51,17 @@ export default function DashboardPreview() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
         <div>
           <h3 className="text-2xl font-semibold text-white">
-            Dashboard Preview
+            Deployment Dashboard
           </h3>
           <p className="text-gray-400 mt-3">
-            A unified dashboard for deployments, logs, metrics, and team management — built for speed and clarity.
+            A focused dashboard to manage application deployments, monitor status,
+            and control redeployments — designed for clarity and reliability.
           </p>
 
           <ul className="mt-6 text-gray-400 space-y-2">
-            <li>• Real-time metrics & logs</li>
-            <li>• One-click snapshots & restores</li>
-            <li>• API keys, teams, and role management</li>
+            <li>• View application deployment status</li>
+            <li>• Trigger manual redeploys</li>
+            <li>• Track build and deployment history</li>
           </ul>
         </div>
 

@@ -1,28 +1,29 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import './temp.css'
+import "./temp.css";
+
 const reviewsData = [
   {
     id: 1,
     name: "Aisha R.",
-    role: "Founder • Fintech",
+    role: "Founder • SaaS Startup",
     photo: "/users/aisha.jpg",
-    text: "Working with axeiro felt like unlocking a cheat code. I sent them a design and a week later, we had a production-ready infrastructure.",
+    text: "Axeiro removed the friction from deployments for us. We connected our GitHub repo and were able to deploy and redeploy our backend without worrying about servers or networking.",
   },
   {
     id: 2,
     name: "David P.",
-    role: "CTO • SaaS",
+    role: "CTO • Early-stage SaaS",
     photo: "/users/david.jpg",
-    text: "Our CI/CD pipelines deployed faster than ever. The integrated monitoring and logging saved hours every week.",
+    text: "What I like most is the clarity. Deployments are predictable, URLs stay stable, and redeploying a new version is straightforward. It feels designed for real-world use, not demos.",
   },
   {
     id: 3,
     name: "Sunita M.",
-    role: "DevOps Contractor",
+    role: "Independent Developer",
     photo: "/users/sunita.jpg",
-    text: "axeiro made infra-as-code effortless. I use it for all my freelance projects now — smooth, powerful, elegant.",
+    text: "Axeiro helps me ship projects without spending time setting up cloud infrastructure. I can focus on the application and let the platform handle builds and deployments.",
   },
 ];
 
@@ -33,12 +34,12 @@ export default function Reviews() {
   return (
     <section
       id="reviews"
-      className="relative py-20 px-6 flex flex-col items-center justify-center text-center "
+      className="relative py-20 px-6 flex flex-col items-center justify-center text-center"
     >
       {/* Background gradient glow */}
       <div className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-[400px] h-[480px] sm:w-[620px] sm:h-[620px] bg-gradient-to-tr from-[#7a00ff] via-[#c900ff] to-[#24043a] opacity-30 blur-[100px] rounded-full"></div>
 
-      <div className="max-w-4xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         {/* Avatars */}
         <div className="flex justify-center gap-5 mb-8">
           {reviewsData.map((r) => (
@@ -62,7 +63,6 @@ export default function Reviews() {
 
         {/* Glass Review Bubble */}
         <div className="relative backdrop-blur-[20px] bg-white/10 border border-white/10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden">
-          {/* Decorative gradient ring glow */}
           <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#c900ff22] to-[#7a00ff22] rounded-3xl blur-2xl opacity-50"></div>
 
           <AnimatePresence mode="wait">
@@ -97,13 +97,11 @@ export default function Reviews() {
               </div>
             </motion.div>
           </AnimatePresence>
+          <div className="pointer-events-none absolute inset-0 z-30 opacity-20 mix-blend-overlay noise-pattern"></div>
         </div>
-           <div className="pointer-events-none absolute inset-0 z-30 opacity-20 mix-blend-overlay noise-pattern"></div>
-      </div>
 
-      {/* <div className="loader">
-  <div className="circle"></div>
-</div> */}
+        
+      </div>
     </section>
   );
 }
