@@ -11,6 +11,7 @@ import PricingCTA from "@/components/PricingCTA";
 import Footer from "@/components/Footer";
 import NavbarWrapper from "@/components/NavbarWrapper";
 import Pricing from "@/components/Pricing";
+import Founder from "@/components/Founder";
 
 export default function Page() {
   return (
@@ -23,6 +24,7 @@ export default function Page() {
           <Services />
           <Security />
           <Integrations />
+          <Founder />
           <Pricing />
           <DashboardPreview />
           <Reviews />
