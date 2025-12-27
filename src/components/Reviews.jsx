@@ -37,7 +37,7 @@ export default function Reviews() {
       className="relative px-2 sm:px-6 flex flex-col items-center justify-center text-center z-20"
     >
       {/* Background gradient glow */}
-      <div className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-full h-[480px] sm:w-[620px] sm:h-[620px] bg-gradient-to-tr from-[#7a00ff] via-[#c900ff] to-[#24043a] opacity-60 blur-[100px] rounded-full"></div>
+      <div className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-full h-[480px] sm:w-[620px] sm:h-[620px] bg-gradient-to-tr from-[#7a00ff] via-[#c900ff] to-[#24043a] opacity-60 sm:opacity-30 blur-[100px] rounded-full"></div>
 
       <div className="max-w-6xl mx-auto relative">
         {/* Avatars */}
