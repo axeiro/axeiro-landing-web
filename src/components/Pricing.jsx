@@ -20,7 +20,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative z-10 py-24 px-6 text-white overflow-hidden">
+    <section id="pricing" className="relative z-10 px-2 sm:px-6 text-white overflow-hidden">
       
       {/* Subtle SVG Lines Background */}
       <svg

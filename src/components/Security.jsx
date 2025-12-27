@@ -1,9 +1,9 @@
 // components/Security.jsx
 export default function Security() {
   return (
-    <section id="security" className="reveal relative z-10 py-20 px-6">
-      <div className="max-w-6xl mx-auto rounded-3xl backdrop-blur-xl shadow-[0_0_30px_rgba(0,0,0,0.6)] p-10 grid md:grid-cols-2 gap-8">
-        <div>
+    <section id="security" className="reveal relative z-10 px-2  md:px-6">
+      <div className="sm:max-w-6xl mx-auto border border-white/20 rounded-3xl backdrop-blur-xl shadow-[0_0_30px_rgba(0,0,0,0.6)] p-5 sm:p-10 grid md:grid-cols-2 gap-8">
+        <div className="  w-full">
           <h3 className="text-2xl font-semibold">Security by Default</h3>
           <p className="text-gray-300 mt-3">
             axeiro follows a secure-by-default deployment model. Application traffic is routed

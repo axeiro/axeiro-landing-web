@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[88vh] flex items-center justify-center overflow-visible px-6 top-16">
+    <section className="relative min-h-[88vh] flex items-center justify-center overflow-visible pb-10 px-2 top-16">
       {/* big circular Lottie backdrop */}
       <div className="absolute -z-20 top-4 lg:-top-20 left-1/2 -translate-x-1/2">
         <div className="relative">
@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* glass plate centered-left */}
       <div className="relative z-10 max-w-6xl w-full flex flex-col lg:flex-row items-start gap-8">
-        <div className="lg:w-2/3 w-full lg:backdrop-blur-[2px] rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
+        <div className="lg:w-2/3 w-full lg:backdrop-blur-[2px] rounded-3xl p-5 sm:p-8 shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
           <div className="flex flex-col lg:flex-row lg:items-start gap-4">
             <div className="flex-1">
               <h1 className="text-3xl md:text-3xl font-bold leading-tight">

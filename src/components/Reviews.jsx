@@ -34,10 +34,10 @@ export default function Reviews() {
   return (
     <section
       id="reviews"
-      className="relative py-20 px-6 flex flex-col items-center justify-center text-center"
+      className="relative px-2 sm:px-6 flex flex-col items-center justify-center text-center z-20"
     >
       {/* Background gradient glow */}
-      <div className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-[400px] h-[480px] sm:w-[620px] sm:h-[620px] bg-gradient-to-tr from-[#7a00ff] via-[#c900ff] to-[#24043a] opacity-30 blur-[100px] rounded-full"></div>
+      <div className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 w-full h-[480px] sm:w-[620px] sm:h-[620px] bg-gradient-to-tr from-[#7a00ff] via-[#c900ff] to-[#24043a] opacity-60 blur-[100px] rounded-full"></div>
 
       <div className="max-w-6xl mx-auto relative">
         {/* Avatars */}
@@ -62,7 +62,7 @@ export default function Reviews() {
         </div>
 
         {/* Glass Review Bubble */}
-        <div className="relative backdrop-blur-[20px] bg-white/10 border border-white/10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden">
+        <div className="relative backdrop-blur-[20px] bg-white/10 border border-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.6)] p-6 sm:p-8 overflow-hidden ">
           <div className="absolute -inset-0.5 bg-gradient-to-tr from-[#c900ff22] to-[#7a00ff22] rounded-3xl blur-2xl opacity-50"></div>
 
           <AnimatePresence mode="wait">

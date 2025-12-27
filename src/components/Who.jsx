@@ -1,8 +1,8 @@
 // components/Who.jsx
 export default function Who() {
   return (
-    <section id="who" className="reveal relative -z-50 py-20 px-6">
-      <div className="max-w-6xl mx-auto rounded-3xl bg-gradient-to-tr from-white/3 to-white/2 backdrop-blur-xl border border-white/6 p-10">
+    <section id="who" className="reveal relative -z-50 px-2 md:px-6">
+      <div className="max-w-6xl mx-auto rounded-3xl bg-gradient-to-tr from-white/3 to-white/2 backdrop-blur-xl border border-white/6 p-5 sm:p-10">
         <h2 className="text-2xl font-semibold">Who is Axeiro for?</h2>
         <p className="mt-4 text-gray-300 max-w-3xl">
           Axeiro is built for developers, startups, agencies, and product teams who:

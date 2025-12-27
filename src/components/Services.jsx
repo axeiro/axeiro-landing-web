@@ -18,7 +18,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative z-10 py-24 px-6 overflow-hidden"
+      className="relative z-10 px-2 md:px-6 overflow-hidden"
       ref={wrapperRef}
     >
       {/* Background SVG unchanged */}
@@ -69,8 +69,8 @@ export default function Services() {
 
         {/* Right Visual */}
         <div ref={rightCardRef} className="flex flex-col items-center text-center relative z-10">
-          <div className="pointer-events-none overflow-hidden scale-112 md:scale-110">
-            <div className="h-86">
+          <div className="pointer-events-none overflow-hidden scale-110">
+            <div className="h-86 scale-110 sm:scale-100 lg:scale-110">
               <video
                 autoPlay
                 loop
@@ -84,7 +84,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-8">
             <h4 className="text-2xl font-semibold text-white">Managed Cloud Runtime</h4>
             <p className="mt-3 text-gray-300 text-sm">
               AWS (Axeiro-managed infrastructure)

@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Founder() {
   return (
-    <section className="relative py-28 overflow-hidden bg-transparent">
+    <section className="relative overflow-hidden bg-transparent">
 
       {/* SVG Background Texture */}
       <div className="absolute inset-0 pointer-events-none">

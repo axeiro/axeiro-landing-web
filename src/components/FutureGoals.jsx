@@ -3,8 +3,8 @@
 // components/FutureGoals.jsx
 export default function FutureGoals() {
   return (
-    <section className="reveal relative py-20 px-6 overflow-hidden">
-      <div className="max-w-6xl mx-auto rounded-3xl backdrop-blur-lg p-10 shadow-[0_0_30px_rgba(0,0,0,0.6)]">
+    <section className="reveal relative px-2 sm:px-6 overflow-hidden">
+      <div className="max-w-6xl mx-auto rounded-3xl backdrop-blur-lg p-5 border border-white/10 sm:p-10 shadow-[0_0_30px_rgba(0,0,0,0.6)]">
         <h3 className="text-2xl font-semibold text-white">
           Platform Direction & Future Capabilities
         </h3>

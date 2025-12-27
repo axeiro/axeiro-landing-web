@@ -101,10 +101,10 @@ gsap.fromTo(
   }, []);
 
   return (
-    <section id="integrations" className="relative z-10 py-20  overflow-hidden">
+    <section id="integrations" className="relative z-10  overflow-hidden">
       <div ref={wrapperRef} className="max-w-7xl mx-auto text-center">
         <h3 className="text-2xl font-semibold">Integrations</h3>
-        <p className="text-gray-300 mt-2">
+        <p className="text-gray-300 mt-2 text-xs sm:text-sm">
           axeiro is designed to work seamlessly with modern developer tools.
           Support for additional cloud providers and platforms may be added over time.
         </p>

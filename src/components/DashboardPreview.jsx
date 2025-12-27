@@ -4,7 +4,7 @@ import animation from "../../public/Animated Dashboards.json";
 
 export default function DashboardPreview() {
   return (
-    <section className="reveal relative z-50 py-20 px-6 overflow-hidden">
+    <section className="reveal relative z-50  px-6 overflow-hidden">
       {/* SVG Grid with fade */}
       <svg
         className="absolute inset-0 w-full h-full -z-10"

@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <>
       <NavbarWrapper />
-      <main className="pt-10 lg:pt-1">
+      <main className="pt-10 flex flex-col justify-between gap-10 lg:pt-1 w-full sm:max-w-[95vw] mx-auto">
         <ScrollAndAnimProvider>
           <Hero />
           <Who />

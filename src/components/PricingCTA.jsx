@@ -20,7 +20,7 @@ export default function PricingCTA() {
   };
 
   return (
-    <section className="relative z-10 py-24 px-6 bg-gradient-to-b from-[#0a061f] to-[#070317]">
+    <section className="relative z-10 pb-24 px-2 sm:px-6 bg-gradient-to-b from-[#0a061f] to-[#070317]">
       <div className="max-w-4xl mx-auto rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-10 text-center shadow-[0_0_25px_rgba(0,0,0,0.4)] transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,0,0,0.5)]">
         <h3 className="text-3xl font-bold text-white">
           Get Early Access to{" "}
