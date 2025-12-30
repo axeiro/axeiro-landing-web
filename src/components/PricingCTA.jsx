@@ -21,7 +21,7 @@ export default function PricingCTA() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/v1/auth/waitlist", {
+      const res = await fetch("https://api.auth.axeiro.com/v1/auth/waitlist", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ email }),
