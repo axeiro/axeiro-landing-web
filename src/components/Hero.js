@@ -37,7 +37,10 @@ export default function Hero() {
               </p>
 
               <div className="mt-6 flex gap-4">
-                <a href={`${process.env.NEXT_PUBLIC_APPLICATION_URL}/auth/register`} className="px-5 py-2 rounded-full transition font-medium shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
+                <a 
+                href="#cta"
+                // href={`${process.env.NEXT_PUBLIC_APPLICATION_URL}/auth/register`} 
+                className="px-5 py-2 rounded-full transition font-medium shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
                   Get Started
                 </a>
                 <Link href="/docs/getting-started" className="px-5 py-2 rounded-full bg-white/6 border border-white/10">

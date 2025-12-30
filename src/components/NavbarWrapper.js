@@ -25,14 +25,15 @@ export default function NavbarWrapper() {
         </div>
 
         <div className="flex items-center gap-3 ">
-          <a
+          {/* <a
             href={`${process.env.NEXT_PUBLIC_APPLICATION_URL}/auth/login`}
             className="px-3 sm:px-4 py-1.5 rounded-full bg-white/10 border border-white/12 text-sm"
           >
             Login
-          </a>
+          </a> */}
           <a
-            href={`${process.env.NEXT_PUBLIC_APPLICATION_URL}/auth/register`}
+          href="#cta"
+            // href={`${process.env.NEXT_PUBLIC_APPLICATION_URL}/auth/register`}
             className="px-2 sm:px-4 py-1.5 rounded-full bg-gradient-to-tr from-[#c900ff] to-[#7a00ff] text-white text-sm shadow-sm"
           >
             Get Early Access
